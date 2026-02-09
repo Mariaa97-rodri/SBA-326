@@ -32,11 +32,84 @@
               <!--phone notch(curved top part)-->
               <div class="phone-notch"></div>
               <!--chat header(purple gradient)-->
-              <div class="chat-header gradient-header p-3 d-flex align-items-center justify-content-between"></div>
+              <div class="chat-header gradient-header p-3 d-flex align-items-center justify-content-between">
+                <!--Left side: back narrow +avatar + name-->
+                <div class="d-flex align-items-center gap-2">
+<!--Back arrow-->
+                  <span class="text-white">&lt;</span>
+                  <!--avatar img-->
+                  <img src="./images/avatar.jpg" alt="Samuel Green" class="avatar rounded-circle border border-2 border-white">
+                  <!--Name and status-->
+                  <div class="text-white">
+                    <p class="mb-0 fw-bold small">Samuel Green</p>
+                    <p class="mb-0 small opacity-75">Available to Walk</p>
+                  </div>
+              </div>
+            <!--right side:three dot menu-->
+            <div class="text-white">⋮</div>
               <!--chat msgs area-->
               <div class="chat-messages p-3"></div>
+              <!--message from Samuel (left side)-->
+              <div class="message-left mb-2">
+                <div class="chat-bubble-left p-2">
+                  <p class="mb-0 small">That sounds great. I’d be happy with that.</p>
+                </div>
+              </div>
+              <!--message from Samuel (left side)-->
+              <div class="message-left mb-2">
+                <div class="chat-bubble-left p-2">
+                  <p class="mb-0 small">Could you send over some pictures of your dog, please?</p>
+                </div>
+              </div>
+              <!--images from you (right side)-->
+              <div class="message-right mb-2 d-flex justify-content-end gap-2">
+                <img src="./images/dog-image-1.jpg" class="dog-image rounded-3">
+                <img src="./images/dog-image-2.jpg" class="dog-image rounded-3">
+                <img src="./images/dog-image-3.jpg" class="dog-image rounded-3">
+              </div>
+              <!--Your message (right side)-->
+              <div class="message-right mb-2 d-flex justify-content-end">
+                <div class="chat-bubble-right p-2">
+                  <p class="mb-0 small">Here are a few pictures. She’s a happy girl!</p>
+                </div>
+              </div>
+              <!--message from Samuel (left side)-->
+              <div class="message-left mb-2">
+                <div class="chat-bubble-left p-2">
+                  <p class="mb-0 small">Can you make it?</p>
+                </div>
+              </div>
+              <!--your message to the right-->
+              <div class="message-right mb-2 d-flex justify-content-end">
+                <div class="chat-bubble-right p-2">
+                  <p class="mb-0 small">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+                </div>
+              </div>
+              <!--Pricing options (left side with radio button)-->
+              <div class="message-left mb-2">
+                <div class="chat-bubble-price p-2 d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <input type="radio" name="walk-time" class="form-check-input">
+                    <span class="text-white small">30 minute walk</span>
+                  </div>
+                  <span class="text-white fw-bold">$29</span>
+                </div>
+              </div>
+              <div class="message-left mb-2">
+                <div class="chat-bubble-price p-2 d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <input type="radio" name="walk-time" class="form-check-input">
+                    <span class="text-white small">1 hour walk</span>
+                  </div>
+                  <span class="text-white fw-bold">$49</span>
+                </div>
+              </div>
               <!--Message input at bottom-->
               <div class="message-input p-3"></div>
+              <div class="input-group">
+                <input type="text" class="form-control border-0 rounded-pill" placeholder="Type a message...">
+                <button class="btn btn-dark rounded-circle ms-2">➤</button>
+              </div>
             </div>
           </div>
         </div>
@@ -56,20 +129,11 @@
     </div>
   </div>
 </div>
-  Samuel Green
-  Available to Walk
+ 
 
-  That sounds great. I’d be happy with that.
+  
 
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
+ 
   $29
 
   1 hour walk
