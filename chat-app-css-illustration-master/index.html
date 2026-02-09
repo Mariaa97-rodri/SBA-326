@@ -2,147 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-<!--Bootstrap CSS-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!--Custom CSS-->
-<link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Chat App CSS Illustration</title>
+  
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container-fluid min-vh-100 d-flex align-items-center">
-  <div class="container">
-    <div class="row align-items-center">
+  <div class="container-fluid min-vh-100 d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
 
-      <!--Left column: Phone mockup-->
-      <div class="col-lg-6 mb-5 mb-lg-0">
-        <!--Phone container-->
-        <div class="phone-container mx-auto">
+        <!--Left column: Phone mockup-->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <!--Phone container-->
+          <div class="phone-container mx-auto">
 
-          <!--Phone frame with white border-->
-          <div class="phone-frame bg-white rounded-4 shadow-lg p-3">
+            <!--Phone frame with white border-->
+            <div class="phone-frame bg-white rounded-4 shadow-lg p-3">
 
-            <!--Acutal phone screen-->
-            <div class="phone-screen rounded-3 overflow-hidden">
+              <!--Actual phone screen-->
+              <div class="phone-screen rounded-3 overflow-hidden">
 
-              <!--phone notch(curved top part)-->
-              <div class="phone-notch"></div>
-              <!--chat header(purple gradient)-->
-              <div class="chat-header gradient-header p-3 d-flex align-items-center justify-content-between">
-                <!--Left side: back narrow +avatar + name-->
-                <div class="d-flex align-items-center gap-2">
-<!--Back arrow-->
-                  <span class="text-white">&lt;</span>
-                  <!--avatar img-->
-                  <img src="./images/avatar.jpg" alt="Samuel Green" class="avatar rounded-circle border border-2 border-white">
-                  <!--Name and status-->
-                  <div class="text-white">
-                    <p class="mb-0 fw-bold small">Samuel Green</p>
-                    <p class="mb-0 small opacity-75">Available to Walk</p>
-                  </div>
-              </div>
-            <!--right side:three dot menu-->
-            <div class="text-white">⋮</div>
-              <!--chat msgs area-->
-              <div class="chat-messages p-3"></div>
-              <!--message from Samuel (left side)-->
-              <div class="message-left mb-2">
-                <div class="chat-bubble-left p-2">
-                  <p class="mb-0 small">That sounds great. I’d be happy with that.</p>
-                </div>
-              </div>
-              <!--message from Samuel (left side)-->
-              <div class="message-left mb-2">
-                <div class="chat-bubble-left p-2">
-                  <p class="mb-0 small">Could you send over some pictures of your dog, please?</p>
-                </div>
-              </div>
-              <!--images from you (right side)-->
-              <div class="message-right mb-2 d-flex justify-content-end gap-2">
-                <img src="./images/dog-image-1.jpg" class="dog-image rounded-3">
-                <img src="./images/dog-image-2.jpg" class="dog-image rounded-3">
-                <img src="./images/dog-image-3.jpg" class="dog-image rounded-3">
-              </div>
-              <!--Your message (right side)-->
-              <div class="message-right mb-2 d-flex justify-content-end">
-                <div class="chat-bubble-right p-2">
-                  <p class="mb-0 small">Here are a few pictures. She’s a happy girl!</p>
-                </div>
-              </div>
-              <!--message from Samuel (left side)-->
-              <div class="message-left mb-2">
-                <div class="chat-bubble-left p-2">
-                  <p class="mb-0 small">Can you make it?</p>
-                </div>
-              </div>
-              <!--your message to the right-->
-              <div class="message-right mb-2 d-flex justify-content-end">
-                <div class="chat-bubble-right p-2">
-                  <p class="mb-0 small">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-                </div>
-              </div>
-              <!--Pricing options (left side with radio button)-->
-              <div class="message-left mb-2">
-                <div class="chat-bubble-price p-2 d-flex align-items-center justify-content-between">
+                <!--Phone notch (curved top part)-->
+                <div class="phone-notch"></div>
+                
+                <!--Chat header (purple gradient)-->
+                <div class="chat-header gradient-header p-3 d-flex align-items-center justify-content-between">
+                  <!--Left side: back arrow + avatar + name-->
                   <div class="d-flex align-items-center gap-2">
-                    <input type="radio" name="walk-time" class="form-check-input">
-                    <span class="text-white small">30 minute walk</span>
+                    <!--Back arrow-->
+                    <span class="text-white">&lt;</span>
+                    <!--Avatar img-->
+                    <img src="./images/avatar.jpg" alt="Samuel Green" class="avatar rounded-circle border border-2 border-white">
+                    <!--Name and status-->
+                    <div class="text-white">
+                      <p class="mb-0 fw-bold small">Samuel Green</p>
+                      <p class="mb-0 small opacity-75">Available to Walk</p>
+                    </div>
                   </div>
-                  <span class="text-white fw-bold">$29</span>
+                  <!--Right side: three dot menu-->
+                  <div class="text-white">⋮</div>
                 </div>
-              </div>
-              <div class="message-left mb-2">
-                <div class="chat-bubble-price p-2 d-flex align-items-center justify-content-between">
-                  <div class="d-flex align-items-center gap-2">
-                    <input type="radio" name="walk-time" class="form-check-input">
-                    <span class="text-white small">1 hour walk</span>
+
+                <!--Chat messages area-->
+                <div class="chat-messages p-3">
+                  <!--Message from Samuel (left side)-->
+                  <div class="message-left mb-2">
+                    <div class="chat-bubble-left p-2">
+                      <p class="mb-0 small">That sounds great. I'd be happy with that.</p>
+                    </div>
                   </div>
-                  <span class="text-white fw-bold">$49</span>
+                  
+                  <!--Message from Samuel (left side)-->
+                  <div class="message-left mb-2">
+                    <div class="chat-bubble-left p-2">
+                      <p class="mb-0 small">Could you send over some pictures of your dog, please?</p>
+                    </div>
+                  </div>
+                  
+                  <!--Images from you (right side)-->
+                  <div class="message-right mb-2 d-flex justify-content-end gap-2">
+                    <img src="./images/dog-image-1.jpg" class="dog-image rounded-3" alt="Dog photo 1">
+                    <img src="./images/dog-image-2.jpg" class="dog-image rounded-3" alt="Dog photo 2">
+                    <img src="./images/dog-image-3.jpg" class="dog-image rounded-3" alt="Dog photo 3">
+                  </div>
+                  
+                  <!--Your message (right side)-->
+                  <div class="message-right mb-2 d-flex justify-content-end">
+                    <div class="chat-bubble-right p-2">
+                      <p class="mb-0 small">Here are a few pictures. She's a happy girl!</p>
+                    </div>
+                  </div>
+                  
+                  <!--Message from Samuel (left side)-->
+                  <div class="message-left mb-2">
+                    <div class="chat-bubble-left p-2">
+                      <p class="mb-0 small">Can you make it?</p>
+                    </div>
+                  </div>
+                  
+                  <!--Your message (right side)-->
+                  <div class="message-right mb-2 d-flex justify-content-end">
+                    <div class="chat-bubble-right p-2">
+                      <p class="mb-0 small">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+                    </div>
+                  </div>
+                  
+                  <!--Pricing options (left side with radio buttons)-->
+                  <div class="message-left mb-2">
+                    <div class="chat-bubble-price p-2 d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-2">
+                        <input type="radio" name="walk-time" class="form-check-input">
+                        <span class="text-white small">30 minute walk</span>
+                      </div>
+                      <span class="text-white fw-bold">$29</span>
+                    </div>
+                  </div>
+                  
+                  <div class="message-left mb-2">
+                    <div class="chat-bubble-price p-2 d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-2">
+                        <input type="radio" name="walk-time" class="form-check-input">
+                        <span class="text-white small">1 hour walk</span>
+                      </div>
+                      <span class="text-white fw-bold">$49</span>
+                    </div>
+                  </div>
                 </div>
+              
+
+                <!--Message input at bottom-->
+                <div class="message-input p-3">
+                  <div class="input-group">
+                    <input type="text" class="form-control border-0 rounded-pill" placeholder="Type a message...">
+                    <button class="btn btn-dark rounded-circle ms-2">➤</button>
+                  </div>
+                </div>
+
               </div>
-              <!--Message input at bottom-->
-              <div class="message-input p-3"></div>
-              <div class="input-group">
-                <input type="text" class="form-control border-0 rounded-pill" placeholder="Type a message...">
-                <button class="btn btn-dark rounded-circle ms-2">➤</button>
-              </div>
+              <!-- Closes phone-screen -->
             </div>
+            <!-- Closes phone-frame -->
+          </div>
+          <!-- Closes phone-container -->
+        </div>
+        <!-- Closes col-lg-6 (left column) -->
+
+        <!--Right column: Description text-->
+        <div class="col-lg-6">
+          <div class="ps-lg-5">
+            <h1 class="display-4 fw-bold mb-4">Simple booking</h1>
+            <p class="text-muted lead">
+              Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+              discuss arrangements and make bookings. Once the walk has been completed you can rate 
+              your walker and book again all through the chat.
+            </p>
           </div>
         </div>
-        <!--Phone content here-->
-      </div>
-      <!--Right column: Description text-->
-      <div class="col-lg-6">
-        <div class="ps-lg-5">
-          <h1 class="display-4 fw-bold mb-4">Simple booking</h1>
-          <p class="text-muted lead">Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.</p>
-        </div>
-        <!--Text content Here-->
-      </div>
+        <!-- Closes col-lg-6 (right column) -->
 
+      </div>
+      <!-- Closes row -->
     </div>
+    <!-- Closes container -->
   </div>
-</div>
- 
+  <!-- Closes container-fluid -->
 
-  
-
- 
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

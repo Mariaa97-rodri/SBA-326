@@ -1,0 +1,56 @@
+/* Custom colors from the design */
+:root {
+    --violet: hsl(264, 100%, 61%);
+    --soft-violet: hsl(264, 100%, 61%);
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --dark-grayish-violet: hsl(270, 7%, 64%);
+}
+
+/* Phone notch */
+.phone-notch {
+    width: 60%;
+    height: 20px;
+    background: white;
+    border-radius: 0 0 15px 15px;
+    margin: 0 auto;
+}
+
+/* Chat bubble styling */
+.chat-bubble-left {
+    background: var(--light-grayish-violet);
+    border-radius: 10px 10px 10px 2px;
+    max-width: 60%;
+}
+
+.chat-bubble-right {
+    background: white;
+    border-radius: 10px 10px 2px 10px;
+    max-width: 60%;
+    margin-left: auto;
+}
+
+/* Gradient background for header */
+.gradient-header {
+    background: linear-gradient(to right, var(--light-magenta), var(--light-violet));
+}
+
+/* ## Step 4: Building the HTML Structure
+
+Here's how to think about the layout:
+```
+Container (Bootstrap)
+└── Row (Bootstrap)
+    └── Column (Bootstrap)
+        └── Phone Frame (Custom + Bootstrap card)
+            ├── Header (Gradient background - Custom CSS)
+            │   ├── Back button
+            │   ├── Avatar image
+            │   └── Name/Status
+            ├── Chat Messages (Bootstrap utilities for spacing)
+            │   ├── Left bubbles (received)
+            │   └── Right bubbles (sent)
+            └── Message Input (Bootstrap input-group) */
